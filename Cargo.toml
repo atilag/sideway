@@ -38,4 +38,4 @@ polling = "3.10"
 
 
 [patch.crates-io]
-rdma-core-mummy = { git = "git@github.ibm.com:Juan-Gomez-Mosquera/rdma-core-nummy.git", branch="apply-xilinx-header-changes" }
+rdma-core-mummy = { git = "ssh://git@github.ibm.com/Juan-Gomez-Mosquera/rdma-core-nummy.git", branch="apply-xilinx-header-changes" }
