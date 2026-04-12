@@ -49,7 +49,7 @@ impl MemoryRegion {
 
     /// Returns the length of the registered region.
     pub fn region_len(&self) -> usize {
-        unsafe { self.mr.as_ref().length }
+        unsafe { self.mr.as_ref().length.try_into().unwrap() }
     }
 
     /// Returns the starting pointer if the memory is host memory.
